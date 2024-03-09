@@ -11,9 +11,9 @@ import Admin from './pages/Admin/Admin'
 import AdminLogin from './components/auth/AdminLogin'
 import NotFound from './pages/NotFound'
 import Home from './pages/Homepage/Home'
-import NewNavbar from './components/main/NewNavbar.jsx'
 import SideBar from './components/main/SideBar'
 import Alumni from './pages/Alumni/Alumni'
+import UserProfile from './pages/Profile/User/UserProfile'
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
           <Route path='/jobs' element={<SideBar page={<Jobs />} />} />
           <Route path='/home' element={<SideBar page={<Home />} />} />
           <Route path='/alumni' element={<SideBar page={<Alumni />} />} />
+          <Route path='/profile' element={<SideBar page={<UserProfile />} />} />
           <Route path='/admin/login' element={<AdminLogin />} />
           <Route path='/dashboard/college' element={<Dashboard />} />
           <Route path='/dashboard/admin' element={<Admin />} />

@@ -37,7 +37,7 @@ const Navbar = ({ scrollToAbout }) => {
             <Box fontFamily={'cursive'}>Alum-Connect</Box>
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
               <Link to={'/'}>Home</Link>
-              <Text cursor={'pointer'} onClick={scrollToAbout}>About</Text>
+              {/* <Text cursor={'pointer'} onClick={scrollToAbout}>About</Text> */}
               {/* <Text cursor={'pointer'} onClick={scrollToAbout}>Team</Text> */}
             </HStack>
           </HStack>
@@ -65,11 +65,11 @@ const Navbar = ({ scrollToAbout }) => {
                 handleMenuClose()
                 scrollToAbout()
               }}>About</Text>
-              <Text cursor={'pointer'} onClick={() => {
+              {/* <Text cursor={'pointer'} onClick={() => {
                 handleMenuClose()
                 scrollToAbout()
               }}>Team</Text>
-              <Link onClick={handleMenuClose} to={'/jobs'}>Jobs</Link>
+              <Link onClick={handleMenuClose} to={'/jobs'}>Jobs</Link> */}
             </Stack>
           </Box>
         ) : null}
