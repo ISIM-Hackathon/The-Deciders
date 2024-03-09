@@ -16,7 +16,6 @@ import { Link } from 'react-router-dom'
 import { MdAssuredWorkload } from "react-icons/md";
 
 
-
 const Navbar = ({ scrollToAbout }) => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -39,8 +38,7 @@ const Navbar = ({ scrollToAbout }) => {
             <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
               <Link to={'/'}>Home</Link>
               <Text cursor={'pointer'} onClick={scrollToAbout}>About</Text>
-              <Text cursor={'pointer'} onClick={scrollToAbout}>Team</Text>
-              <Link to={'/jobs'}>Jobs</Link>
+              {/* <Text cursor={'pointer'} onClick={scrollToAbout}>Team</Text> */}
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>

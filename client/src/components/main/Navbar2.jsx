@@ -40,9 +40,9 @@ export default function Simple() {
                     <HStack spacing={8} alignItems={'center'}>
                         <Box fontFamily={'cursive'}>Alum-Connecct</Box>
                         <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                            <Link onClick={handleMenuClose} to={'/college'}>Home</Link>
+                            {/* <Link onClick={handleMenuClose} to={'/college'}>Home</Link>
                             <Text cursor={'pointer'} >Add User</Text>
-                            <Link onClick={handleMenuClose} to={'/jobs'}>Post Job</Link>
+                            <Link onClick={handleMenuClose} to={'/jobs'}>Post Job</Link> */}
                         </HStack>
                     </HStack>
                     <Flex alignItems={'center'}>

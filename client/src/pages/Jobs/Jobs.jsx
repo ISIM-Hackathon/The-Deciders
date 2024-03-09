@@ -1,7 +1,8 @@
 import React from 'react'
-import Jobs from '../Jobs/Jobs'
+import JobsLayout from './JobsLayout'
 
-const Home = () => {
+const Jobs = () => {
+
   const jobDetail = [
     {
       'job_id': '1',
@@ -43,9 +44,9 @@ const Home = () => {
 
   return (
     <>
-      <Jobs jobDetail={jobDetail} />
+      <JobsLayout jobDetail={jobDetail} />
     </>
   )
 }
 
-export default Home
+export default Jobs

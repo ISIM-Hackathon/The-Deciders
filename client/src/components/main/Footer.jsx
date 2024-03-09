@@ -42,7 +42,7 @@ export default function Footer() {
   const date = new Date()
   return (
     <Box
-      bg={useColorModeValue('gray.50', 'gray.900')}
+      bg={useColorModeValue('white', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
       <Container
         as={Stack}
@@ -50,7 +50,7 @@ export default function Footer() {
         py={4}
         direction={{ base: 'column', md: 'row' }}
         spacing={4}
-        justify={{ base: 'center', md: 'space-between' }}
+        justify={{ base: 'center', md: 'center' }}
         align={{ base: 'center', md: 'center' }}>
         <Text>© {date.getFullYear()} The Deciders. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
